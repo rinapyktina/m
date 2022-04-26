@@ -3,19 +3,19 @@
 
 if __name__ == "__main__":
     rows = 8
-    columns = 8
+    col = 8
     array = []
     for _ in range(rows):
         row = list(map(int, input().split()))
-        assert len(row) == columns
+        assert len(row) == col
         array.append(row)
 
-    allks = []
+    kls = []
 
     for k in range(3):
         column = []
         for j in range(3):
             column.append(array[j][k])
         if column == array[k]:
-            allks.append(k)
-    print(allks)
+            kls.append(k)
+    print(kls)
