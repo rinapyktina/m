@@ -9,14 +9,14 @@ if __name__ == "__main__":
         row = list(map(int, input().split()))
         assert len(row) == m
         A.append(row)
-    cnt = 0
+    counter = 0
     for i in range(n):
-        cntrow = 0
+        counterrow = 0
         for j in range(m):
             if A[i][j] < 0:
-                cntrow += A[i][j]
+                counterrow += A[i][j]
         for j in range(m):
             if A[i][j] == 0:
-                cnt += cntrow
+                counter += counterrow
                 break
-    print(cnt)
+    print(counter)
