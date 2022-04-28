@@ -2,8 +2,7 @@
 # /-*- coding: UTF-8 -*-
 
 if __name__ == "__main__":
-    n = int(input("n - "))
-    m = int(input("m - "))
+  #матрица
 A = [...]
 with open("matrix.txt", "w", encoding="utf-8") as file:
     for row in A:
